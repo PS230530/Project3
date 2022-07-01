@@ -1,0 +1,83 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:default;
+    background-color:rgb(8, 81, 75);
+  }
+  
+  
+  .titel 
+  {
+    text-align: center;
+  }
+  
+  
+   table  {
+    border: 10px;
+    border-style: solid;
+    border-color: cadetblue;
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "form form form"
+        "footer footer footer";
+  }
+  
+  .header 
+  {
+    grid-area: header;
+    height: auto;
+    color: white;
+    text-align: center;
+  }
+  
+  .nav
+  {
+    grid-area: nav;
+  }
+  
+  .form 
+  {
+    grid-area: form;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+  
+  .footer 
+  {
+    grid-area: footer;
+  }
+  
+  .buttonnav {
+    width: 376px;
+    height: 50px;
+    border: 5px;
+    border-color: cadetblue;
+    color: cadetblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    font-size: 20px;
+    border-style: solid;
+  }
+  
+  .buttonnav:hover {
+  background-color: cadetblue;
+  ;
+  color: white;
+  font-size: 20px;  
+  transition-duration: 0.8s;
+  font-weight: bold;
+  }
+  
+  
